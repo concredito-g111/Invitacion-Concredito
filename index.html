@@ -104,7 +104,7 @@ const name=(p.get("nombre")||"").trim(),group=(p.get("grupo")||"").trim();
 if(name)$("guest").textContent="🎄 "+name+(group?" · "+group:"")+" 🎄";
 const guest=name||"Invitado especial",gt=group?" | Grupo: "+group:"";
 const wa=m=>"https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(m);
-$("confirmBtn").href=wa("¡Hola! Confirmo con mucho gusto mi asistencia al Brindis Decembrino de ConCrédito. Nombre: "+guest+gt+". ¡Nos vemos!");
+$("confirmBtn").href=wa("¡Hola! Confirmo con mucho gusto mi asistencia al Brindis Decembrino de ConCrédito. ¡ AGREGA TU NOMBRE, y GRUPO AL QUE PERTENECES EN OTRO MENSAJE !"+guest+gt+". ¡Nos vemos!");
 $("declineBtn").href=wa("Hola, muchas gracias por la invitación al Brindis Decembrino de ConCrédito. Lamentablemente no podré asistir. Nombre: "+guest+gt+".");
 $("mapBtn").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(CONFIG.place);
 const S=new Date(CONFIG.start),E=new Date(CONFIG.end);
